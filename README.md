@@ -1,8 +1,8 @@
 # Quantitative Characterisation of Morphological and Phenotypic Changes During Microbial Cell Differentiation and Multicellular Behaviour
 
-The main focus of my PhD thesis is quantifying and interpreting bacterial multicellular behaviour in microscopy image data, primarily in the context of biofilms of Bacillus subtilis, but also in the firing of the Type VI Secretion System of Serratia marcescens. Storing and organising microscopy images on an OMERO server [[1](https://www.openmicroscopy.org/omero/)] allows convenient access to unprocessed intensity data from Matlab using the OMERO.matlab toolkit [[2](https://www.openmicroscopy.org/omero/downloads/)]. Within this environment I developed a set of tools designed to have generalised functionality for analysing intensity images and brought them together in a package called OMERO.mtools [[3](https://www.openmicroscopy.org/omero/features/analyze/)] with full source code available [[4](https://github.com/mporter-gre/mtools)]. It is, however, sometimes necessary to perform bespoke analyses for very specific experiments. In this repository I present the code used in my thesis that fits this description. 
+The main focus of my PhD thesis is quantifying and interpreting bacterial multicellular behaviour in microscopy image data, primarily in the context of biofilms of Bacillus subtilis, but also in the firing of the Type VI Secretion System of Serratia marcescens. Storing and organising microscopy images on an OMERO server [[1](https://www.openmicroscopy.org/omero/)] allows convenient access to unprocessed intensity data from Matlab using the OMERO.matlab toolkit [[2](https://www.openmicroscopy.org/omero/downloads/)]. Within this environment I developed a set of tools designed to have generalised functionality for analysing intensity images and brought them together in a package called OMERO.mtools [[3](https://www.openmicroscopy.org/omero/features/analyze/)], downloadable from [[4](https://downloads.openmicroscopy.org/mtools/)] with full source code available [[5](https://github.com/mporter-gre/mtools)]. It is, however, sometimes necessary to perform bespoke analyses for very specific experiments. In this repository I present the code used in my thesis that fits this description. 
 
-Of the functions here, two have been published previously. ‘YuabExtentAnalysis.m’ (run from its GUI in Interfaces/YuabExtentLaunchpad.m) was used to determine the penetrance of the YuaB protein into floating biofilms of B. subtilis [[5](http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3746881&tool=pmcentrez&rendertype=abstract)] and ‘fpBacteriaSeg3D.m’ is a multi-step procedure for segmenting fluorescent S. marcescens cells for automatic cell counting [[6](http://www.cell.com/article/S221112471500950X/fulltext)].
+Of the functions here, two have been published previously. ‘YuabExtentAnalysis.m’ (run from its GUI in Interfaces/YuabExtentLaunchpad.m) was used to determine the penetrance of the YuaB protein into floating biofilms of B. subtilis [[6](http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3746881&tool=pmcentrez&rendertype=abstract)] and ‘fpBacteriaSeg3D.m’ is a multi-step procedure for segmenting fluorescent S. marcescens cells for automatic cell counting [[7](http://www.cell.com/article/S221112471500950X/fulltext)].
 
 The remainder of the code here was used to quantify laser scanning confocal microscopy of B. subtilis colony biofilms in three distinct temporal windows of growth: during “Colonisation”, when individual cells develop into a coherent biomass; throughout “Expansion”, when a monolayer of chains of cells grow radially from the central mass; and “Maturation”, where radial expansion virtually stops and the biomass becomes thicker. Wild-type NCBI 3610 strain growth was compared to specific gene-deletion strains using combinations of non-fluorescent cells, constitutively fluorescent (GFP) cells and cells harbouring a GFP promoter reporter for the eps operon.
 
@@ -14,13 +14,15 @@ To use the code a Matlab environment should be set up with the OMERO.matlab tool
 
 [2] https://www.openmicroscopy.org/omero/downloads/
 
+[4] https://downloads.openmicroscopy.org/mtools/
+
 [3] https://www.openmicroscopy.org/omero/features/analyze/
 
-[4] https://github.com/mporter-gre/mtools
+[5] https://github.com/mporter-gre/mtools
 
-[5] Hobley, L., Ostrowski, A., Rao, F. V, Bromley, K.M., Porter, M., Prescott, A.R., et al. (2013) BslA is a self-assembling bacterial hydrophobin that coats the Bacillus subtilis biofilm. Proc Natl Acad Sci U S A 110: 13600–5 http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3746881&tool=pmcentrez&rendertype=abstract
+[6] Hobley, L., Ostrowski, A., Rao, F. V, Bromley, K.M., Porter, M., Prescott, A.R., et al. (2013) BslA is a self-assembling bacterial hydrophobin that coats the Bacillus subtilis biofilm. Proc Natl Acad Sci U S A 110: 13600–5 http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3746881&tool=pmcentrez&rendertype=abstract
 
-[6] Gerc, A.J., Diepold, A., Trunk, K., Porter, M., Rickman, C., Armitage, J.P., et al. (2015) Visualization of the Serratia Type VI Secretion System Reveals Unprovoked Attacks and Dynamic Assembly. Cell Rep 12: 2131–42 http://www.cell.com/article/S221112471500950X/fulltext
+[7] Gerc, A.J., Diepold, A., Trunk, K., Porter, M., Rickman, C., Armitage, J.P., et al. (2015) Visualization of the Serratia Type VI Secretion System Reveals Unprovoked Attacks and Dynamic Assembly. Cell Rep 12: 2131–42 http://www.cell.com/article/S221112471500950X/fulltext
 
 
 Table 1 

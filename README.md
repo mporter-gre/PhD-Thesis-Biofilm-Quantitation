@@ -42,7 +42,10 @@ volumeUnderBiofilm.m | Z-Stack | session, dsId | volumes, volSum
 XYZProjectionMakeAndImport.m | Z-Stack | session, imageId, c, flipDim |
 
 
+Table 2
 
+Term | Description
+---- | -----------
 session | OMERO session object
 imageId | OMERO image ID
 c | Channel number

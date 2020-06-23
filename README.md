@@ -1,4 +1,4 @@
-#Quantitative Characterisation of Morphological and Phenotypic Changes During Microbial Cell Differentiation and Multicellular Behaviour#
+# Quantitative Characterisation of Morphological and Phenotypic Changes During Microbial Cell Differentiation and Multicellular Behaviour
 
 The main focus of my PhD thesis is quantifying and interpreting bacterial multicellular behaviour in microscopy image data, primarily in the context of biofilms of Bacillus subtilis, but also in the firing of the Type VI Secretion System of Serratia marcescens. Storing and organising microscopy images on an OMERO server [1] allows convenient access to unprocessed intensity data from Matlab using the OMERO.matlab toolkit [2]. Within this environment I developed a set of tools designed to have generalised functionality for analysing intensity images and brought them together in a package called OMERO.mtools [3] with full source code available [4]. It is, however, sometimes necessary to perform bespoke analyses for very specific experiments. In this repository I present the code used in my thesis that fits this description. 
 
